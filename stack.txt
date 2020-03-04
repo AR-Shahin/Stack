@@ -79,7 +79,11 @@ void pop_value()
     print_value();
     }
 }
-
+void peak()
+{
+    int x = stack[top-1];
+    printf("\npeak = %d",x);
+}
 int main()
 {
 
@@ -91,7 +95,9 @@ int main()
         push(n);
     }
     print_value();
+    peak();
     pop_value();
+    peak();
     printf("top = %d",top);
     return 0;
 }
